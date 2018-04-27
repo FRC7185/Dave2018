@@ -40,5 +40,5 @@ public class RobotMap {
     public static int solenoidPort = 0;
     public static int flipperDriver = 2;
     public static int rightLauncherDriver = 3;
-    public static int leftLanucherDriver = 4;
+    public static int leftLauncherDriver = 4;
 }

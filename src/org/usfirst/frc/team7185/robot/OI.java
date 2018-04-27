@@ -7,7 +7,16 @@
 
 package org.usfirst.frc.team7185.robot;
 
+
+
+import org.usfirst.frc.team7185.robot.commands.GrabCube;
+import org.usfirst.frc.team7185.robot.commands.LowerFlipper;
+import org.usfirst.frc.team7185.robot.commands.RaiseFlipper;
+import org.usfirst.frc.team7185.robot.commands.ReleaseCube;
+
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.Button;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -44,4 +53,24 @@ public class OI {
 	
 	public Joystick joystick = new Joystick(0);
 	
+	public Button button1 = new JoystickButton(joystick, 0),
+			button2 = new JoystickButton(joystick, 1),
+			button3 = new JoystickButton(joystick, 2),
+			button4 = new JoystickButton(joystick, 3),
+			button5 = new JoystickButton(joystick, 4),
+			button6 = new JoystickButton(joystick, 5),
+			button7 = new JoystickButton(joystick, 6),
+			button8 = new JoystickButton(joystick, 7);
+	
+	public OI() {
+		
+	button1.whenPressed(new RaiseFlipper());
+	button2.whenPressed(new ReleaseCube());
+	button3.whenPressed(new GrabCube());
+	button4.whenPressed(new LowerFlipper());
+	//button6.whenPressed();
+	//button8.whenPressed();
+	
+	//button7.whenPressed();
+	}
 }

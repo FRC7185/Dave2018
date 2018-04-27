@@ -13,6 +13,10 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc.team7185.robot.subsystems.DriveTrainSubsystem;
+import org.usfirst.frc.team7185.robot.subsystems.ElevatorSubsystem;
+import org.usfirst.frc.team7185.robot.subsystems.FlipperSubsystem;
+import org.usfirst.frc.team7185.robot.subsystems.GripperSubsystem;
+import org.usfirst.frc.team7185.robot.subsystems.LauncherSubsystem;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -22,7 +26,13 @@ import org.usfirst.frc.team7185.robot.subsystems.DriveTrainSubsystem;
  * project.
  */
 public class Robot extends TimedRobot {
+	
 	public static final DriveTrainSubsystem DriveTrainSub = new DriveTrainSubsystem();
+	public static final GripperSubsystem gripperSub = new GripperSubsystem();
+	public static final FlipperSubsystem flipperSub = new FlipperSubsystem();
+	public static final ElevatorSubsystem elevatorSub = new ElevatorSubsystem();
+	public static final LauncherSubsystem launcherSub = new LauncherSubsystem();
+	
 	public static OI oi;
 
 	Command m_autonomousCommand;
