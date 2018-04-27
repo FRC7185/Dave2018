@@ -64,10 +64,10 @@ public class OI {
 	
 	public OI() {
 		
-	button1.whenPressed(new RaiseFlipper());
-	button2.whenPressed(new ReleaseCube());
-	button3.whenPressed(new GrabCube());
-	button4.whenPressed(new LowerFlipper());
+	button4.whenPressed(new RaiseFlipper());
+	button3.whenPressed(new ReleaseCube());
+	button2.whenPressed(new GrabCube());
+	button1.whenPressed(new LowerFlipper());
 	//button6.whenPressed();
 	//button8.whenPressed();
 	

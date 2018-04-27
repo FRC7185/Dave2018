@@ -12,14 +12,21 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class FlipperSubsystem extends Subsystem {
 	
-	
+	private WPI_TalonSRX flipperMotor;
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 	
-	public FlipperSubsystem() {
+	public FlipperSubsystem(){
+
 		
 		flipperMotor = new WPI_TalonSRX(RobotMap.flipperDriver);
+		
+	}
+	
+	public void set(double speed) {
+		
+		flipperMotor.set(speed);
 		
 	}
 
