@@ -1,8 +1,6 @@
 package org.usfirst.frc.team7185.robot.subsystems;
 
 import org.usfirst.frc.team7185.robot.RobotMap;
-import org.usfirst.frc.team7185.robot.commands.ReleaseCube;
-
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -30,7 +28,7 @@ public class GripperSubsystem extends Subsystem {
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
-    	setDefaultCommand(new ReleaseCube());
+    	
     }
 }
 

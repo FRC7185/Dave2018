@@ -1,8 +1,6 @@
 package org.usfirst.frc.team7185.robot.subsystems;
 
 import org.usfirst.frc.team7185.robot.RobotMap;
-import org.usfirst.frc.team7185.robot.commands.RaiseFlipper;
-
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -33,7 +31,7 @@ public class FlipperSubsystem extends Subsystem {
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
-    	setDefaultCommand(new RaiseFlipper());
+    	
     }
 }
 
