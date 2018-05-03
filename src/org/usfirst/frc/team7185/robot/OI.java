@@ -53,14 +53,14 @@ public class OI {
 	
 	public Joystick joystick = new Joystick(0);
 	
-	public Button button1 = new JoystickButton(joystick, 0),
-			button2 = new JoystickButton(joystick, 1),
-			button3 = new JoystickButton(joystick, 2),
-			button4 = new JoystickButton(joystick, 3),
-			button5 = new JoystickButton(joystick, 4),
-			button6 = new JoystickButton(joystick, 5),
-			button7 = new JoystickButton(joystick, 6),
-			button8 = new JoystickButton(joystick, 7);
+	public Button button1 = new JoystickButton(joystick, 1),
+			button2 = new JoystickButton(joystick, 2),
+			button3 = new JoystickButton(joystick, 3),
+			button4 = new JoystickButton(joystick, 4),
+			button5 = new JoystickButton(joystick, 5),
+			button6 = new JoystickButton(joystick, 6),
+			button7 = new JoystickButton(joystick, 7),
+			button8 = new JoystickButton(joystick,8);
 	
 	public OI() {
 		
