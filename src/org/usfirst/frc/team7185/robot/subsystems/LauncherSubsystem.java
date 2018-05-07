@@ -19,16 +19,16 @@ public class LauncherSubsystem extends Subsystem {
 	
 public LauncherSubsystem() {
 		
-		leftLauncherMotor = new WPI_TalonSRX(RobotMap.leftLauncherDriver);
-		rightLauncherMotor = new WPI_TalonSRX(RobotMap.rightLauncherDriver);
+		// leftLauncherMotor = new WPI_TalonSRX(RobotMap.leftLauncherDriver);
+		// rightLauncherMotor = new WPI_TalonSRX(RobotMap.rightLauncherDriver);
 		
 		
 	}
 
 public void set(double speed) {
 	
-	leftLauncherMotor.set(speed);
-	rightLauncherMotor.set(-speed);
+	// leftLauncherMotor.set(speed);
+	// rightLauncherMotor.set(-speed);
 	
 }
 
