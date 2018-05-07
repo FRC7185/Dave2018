@@ -20,7 +20,7 @@ public class LowerFlipper extends Command {
     protected void initialize() {
     	
     	setTimeout(RobotMap.lowerFlipperInterval);
-    	Robot.flipperSub.set(.5);
+    	Robot.flipperSub.set(.3);
     }
 
     // Called repeatedly when this Command is scheduled to run
