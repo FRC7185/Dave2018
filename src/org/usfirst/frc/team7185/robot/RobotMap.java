@@ -34,8 +34,8 @@ public class RobotMap {
     public static int rampLifterSolenoidClose = 3;
     public static int solenoidPort = 0;
     public static int flipperDriver = 2;
-    public static int rightLauncherDriver = 3;
-    public static int leftLauncherDriver = 4;
+    public static int rightLauncherDriver = 1;
+    public static int leftLauncherDriver = 0;
     public static double raiseFlipperInterval = 1;
     public static double lowerFlipperInterval = 1;
 }

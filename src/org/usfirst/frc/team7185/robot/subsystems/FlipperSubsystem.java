@@ -18,13 +18,13 @@ public class FlipperSubsystem extends Subsystem {
 	public FlipperSubsystem(){
 
 		
-		// flipperMotor = new WPI_TalonSRX(RobotMap.flipperDriver);
+		flipperMotor = new WPI_TalonSRX(RobotMap.flipperDriver);
 		
 	}
 	
 	public void set(double speed) {
 		
-		// flipperMotor.set(speed);
+		flipperMotor.set(speed);
 		
 	}
 
