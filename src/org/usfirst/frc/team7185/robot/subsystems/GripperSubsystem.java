@@ -17,12 +17,12 @@ public class GripperSubsystem extends Subsystem {
 	
 	public GripperSubsystem() {
 		
-		//gripperSolenoid = new DoubleSolenoid(RobotMap.gripperSolenoidOpen, RobotMap.gripperSolenoidClose);
+		gripperSolenoid = new DoubleSolenoid(RobotMap.gripperSolenoidOpen, RobotMap.gripperSolenoidClose);
 		
 	}
 	
 	public void set(Value value) {
-		//gripperSolenoid.set(value);
+		gripperSolenoid.set(value);
 	}
 
     public void initDefaultCommand() {
