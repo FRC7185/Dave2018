@@ -20,7 +20,7 @@ public class RaiseFlipper extends Command {
     protected void initialize() {
     	
     	setTimeout(RobotMap.raiseFlipperInterval);
-    	Robot.flipperSub.set(-.3);
+    	Robot.flipperSub.set(-.8);
     	
     
     }

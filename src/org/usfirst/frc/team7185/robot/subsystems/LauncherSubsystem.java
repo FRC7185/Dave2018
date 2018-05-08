@@ -1,6 +1,7 @@
 package org.usfirst.frc.team7185.robot.subsystems;
 
 import org.usfirst.frc.team7185.robot.RobotMap;
+import org.usfirst.frc.team7185.robot.commands.LaunchHigh;
 
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
@@ -19,22 +20,24 @@ public class LauncherSubsystem extends Subsystem {
 	
 public LauncherSubsystem() {
 		
-		// leftLauncherMotor = new WPI_TalonSRX(RobotMap.leftLauncherDriver);
-		// rightLauncherMotor = new WPI_TalonSRX(RobotMap.rightLauncherDriver);
+		leftLauncherMotor = new WPI_TalonSRX(RobotMap.leftLauncherDriver);
+		rightLauncherMotor = new WPI_TalonSRX(RobotMap.rightLauncherDriver);
 		
 		
 	}
 
 public void set(double speed) {
 	
-	// leftLauncherMotor.set(speed);
-	// rightLauncherMotor.set(-speed);
+	leftLauncherMotor.set(speed);
+	rightLauncherMotor.set(-speed);
 	
 }
 
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+    	
+    	setDefaultCommand(new LaunchHigh());
     }
 }
 

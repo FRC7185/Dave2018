@@ -16,19 +16,20 @@ public class FlipperSubsystem extends Subsystem {
     // here. Call these from Commands.
 	
 	public FlipperSubsystem(){
-
 		
 		flipperMotor = new WPI_TalonSRX(RobotMap.flipperDriver);
+		flipperMotor.configOpenloopRamp (.5, 2000); 
 		
 	}
 	
 	public void set(double speed) {
 		
 		flipperMotor.set(speed);
-		
+
 	}
 
     public void initDefaultCommand() {
+    	
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     	
