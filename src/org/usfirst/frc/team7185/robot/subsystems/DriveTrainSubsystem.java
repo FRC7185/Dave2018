@@ -33,7 +33,7 @@ public class DriveTrainSubsystem extends Subsystem {
 	}
 	
 	public void arcadeDrive(double x, double y) {
-		drive.arcadeDrive(x, y);
+		drive.arcadeDrive(-x,-y);
 	}
 
     public void initDefaultCommand() {
