@@ -12,6 +12,7 @@ public class LaunchHigh extends Command {
     public LaunchHigh() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
+    	requires(Robot.launcherSub);
     }
 
     // Called just before this Command runs the first time
