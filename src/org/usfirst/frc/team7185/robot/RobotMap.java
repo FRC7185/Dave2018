@@ -36,6 +36,6 @@ public class RobotMap {
     public static int flipperDriver = 2;
     public static int rightLauncherDriver = 1;
     public static int leftLauncherDriver = 0;
-    public static double raiseFlipperInterval = 1;
-    public static double lowerFlipperInterval = 1;
+    public static double raiseFlipperInterval = .7;
+    public static double lowerFlipperInterval = .7;
 }
