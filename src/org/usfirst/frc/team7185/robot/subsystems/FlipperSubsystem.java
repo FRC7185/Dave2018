@@ -18,7 +18,7 @@ public class FlipperSubsystem extends Subsystem {
 	public FlipperSubsystem(){
 		
 		flipperMotor = new WPI_TalonSRX(RobotMap.flipperDriver);
-		flipperMotor.configOpenloopRamp (3, 2000); 
+		flipperMotor.configOpenloopRamp (1.5, 2000); 
 		
 	}
 	
